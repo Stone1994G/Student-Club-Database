@@ -1,0 +1,387 @@
+/*
+Stone Gulliksen
+sagullik@asu.edu
+*/
+Table STUDENT created.
+
+No errors.
+
+Table CLUB created.
+
+No errors.
+
+Table MEETINGS created.
+
+No errors.
+
+Table CLUB_EVENT created.
+
+No errors.
+
+Table PAYMENT created.
+
+No errors.
+
+Table PAYMENT altered.
+
+No errors.
+
+Table ATTEND_EVENT created.
+
+No errors.
+
+Table ATTEND_MEETING created.
+
+No errors.
+
+Table JOIN_CLUB created.
+
+No errors.
+Name           Null?    Type         
+-------------- -------- ------------ 
+FNAME          NOT NULL VARCHAR2(20) 
+LNAME          NOT NULL VARCHAR2(20) 
+STUDENT_ID     NOT NULL NUMBER(38)   
+ACC_BAL        NOT NULL FLOAT(126)   
+SCH_YEAR       NOT NULL VARCHAR2(10) 
+PRESIDENT      NOT NULL VARCHAR2(5)  
+VICE_PRESIDENT NOT NULL VARCHAR2(5)  
+Name      Null?    Type         
+--------- -------- ------------ 
+CLUB_NAME NOT NULL VARCHAR2(20) 
+MEMBERS   NOT NULL NUMBER(38)   
+Name                Null?    Type         
+------------------- -------- ------------ 
+CLUB_NAME                    VARCHAR2(20) 
+MEETING_NUM         NOT NULL NUMBER(38)   
+MEMBERS_ATT         NOT NULL NUMBER(38)   
+SUBJECT             NOT NULL VARCHAR2(20) 
+MEETING_DESCRIPTION NOT NULL VARCHAR2(50) 
+MEETING_LOCATION    NOT NULL VARCHAR2(10) 
+MEETING_DATE        NOT NULL VARCHAR2(20) 
+MEETING_TIME        NOT NULL VARCHAR2(20) 
+MEETING_DURATION    NOT NULL VARCHAR2(20) 
+Name              Null?    Type          
+----------------- -------- ------------- 
+CLUB_NAME         NOT NULL VARCHAR2(20)  
+SUBJECT           NOT NULL VARCHAR2(20)  
+EVENT_DESCRIPTION NOT NULL VARCHAR2(100) 
+EVENT_DATE        NOT NULL VARCHAR2(15)  
+EVENT_NAME        NOT NULL VARCHAR2(100) 
+EVENT_NUMBER      NOT NULL NUMBER(38)    
+EVENT_TIME        NOT NULL VARCHAR2(10)  
+EVENT_LOCATION    NOT NULL VARCHAR2(20)  
+MEMBERS_ATT       NOT NULL NUMBER(38)    
+EVENT_DURATION    NOT NULL VARCHAR2(20)  
+Name         Null?    Type         
+------------ -------- ------------ 
+PAYMENT_ID   NOT NULL NUMBER(38)   
+STUDENT_ID   NOT NULL NUMBER(38)   
+CLUB_NAME    NOT NULL VARCHAR2(20) 
+PAYMENT_DUE  NOT NULL FLOAT(126)   
+PAY_AMT      NOT NULL FLOAT(126)   
+PAY_DUE_DATE NOT NULL VARCHAR2(10) 
+Name              Null?    Type       
+----------------- -------- ---------- 
+EVENT_ATTENDEE_ID NOT NULL NUMBER(38) 
+STUDENT_ID        NOT NULL NUMBER(38) 
+EVENT_NUMBER      NOT NULL NUMBER(38) 
+Name        Null?    Type       
+----------- -------- ---------- 
+ATTENDEE_ID NOT NULL NUMBER(38) 
+STUDENT_ID  NOT NULL NUMBER(38) 
+MEETING_NUM NOT NULL NUMBER(38) 
+Name       Null?    Type         
+---------- -------- ------------ 
+STUDENT_ID NOT NULL NUMBER(38)   
+MEMBER_ID  NOT NULL NUMBER(38)   
+CLUB_NAME  NOT NULL VARCHAR2(20) 
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+FNAME                LNAME                STUDENT_ID    ACC_BAL SCH_YEAR   PRESI VICE_
+-------------------- -------------------- ---------- ---------- ---------- ----- -----
+Jake                 Randle                     1111      250.5 senior     yes   no   
+Rabi                 Pinkerten                  2222      50.23 freshman   no    no   
+Jessica              Allambaka                  3333      90.52 senior     yes   no   
+Ricardo              Mendoza                    4444     250.25 senior     yes   no   
+Don                  Vito                       5555     150.25 junior     no    yes  
+Jackie               Flanigan                   6666     250.25 senior     yes   no   
+Tania                Lopez                      7777     950.25 junior     no    yes  
+Liam                 Evensten                   8888     250.25 freshman   no    yes  
+
+8 rows selected. 
+
+
+CLUB_NAME               MEMBERS
+-------------------- ----------
+Coding Club                   2
+Fight Club                    2
+Dance Club                    2
+Music Club                    2
+
+
+CLUB_NAME            MEETING_NUM MEMBERS_ATT SUBJECT              MEETING_DESCRIPTION                                MEETING_LO MEETING_DATE         MEETING_TIME         MEETING_DURATION    
+-------------------- ----------- ----------- -------------------- -------------------------------------------------- ---------- -------------------- -------------------- --------------------
+Coding Club                  111           2 Job interviews       Learn how nail next interview                      HT25       12/4/2019            7:00PM               1 HOUR              
+Fight Club                   222           2 Self-Defense         Learn how to defend yourself                       SDFC100    12/4/2019            6:00PM               1 HOUR              
+Dance Club                   333           2 Rythem               Learn how to dance on beat                         SDFC200    12/5/2019            10:00AM              50 MINUTES          
+Music Club                   444           2 Music Theory         Learn the major scale                              MB154      12/6/2019            12:00PM              1 HOUR              
+
+
+CLUB_NAME            SUBJECT              EVENT_DESCRIPTION                                                                                    EVENT_DATE      EVENT_NAME                                                                                           EVENT_NUMBER EVENT_TIME EVENT_LOCATION       MEMBERS_ATT EVENT_DURATION      
+-------------------- -------------------- ---------------------------------------------------------------------------------------------------- --------------- ---------------------------------------------------------------------------------------------------- ------------ ---------- -------------------- ----------- --------------------
+Coding Club          Power of Javascript  javascript frameworks                                                                                11/25/2019      Learn about the power of javascript                                                                          1111 1:30PM     HT201                          2 1 HOUR              
+Fight Club           Jiu Jitsu            Different Styles                                                                                     11/25/2019      Learn the difference between traditional Jiu Jitsu and Brazilian Jiu Jitsu                                   2222 2:30PM     SDFC101                        2 1 HOUR              
+Dance Club           Twerking             Different styles of twerking                                                                         11/25/2019      Learn how to twerk efficiently                                                                               3333 6:30PM     SDFC102                        2 1 HOUR              
+Music Club           Jazz                 Hear Beatiful Jazz Music                                                                             11/25/2019      Jazz Recital                                                                                                 4444 6:30PM     MU Top Floor                   2 1 HOUR              
+
+
+PAYMENT_ID STUDENT_ID CLUB_NAME            PAYMENT_DUE    PAY_AMT PAY_DUE_DA
+---------- ---------- -------------------- ----------- ---------- ----------
+      1111       1111 Coding Club                 9.99       9.99 12/1/2019 
+      2222       2222 Fight Club                 20.55      20.55 12/1/2019 
+      3333       3333 Dance Club                 10.45      10.45 12/1/2019 
+      4444       4444 Music Club                 15.25      15.25 12/1/2019 
+      5555       5555 Coding Club                 9.99       9.99 12/1/2019 
+      6666       6666 Fight Club                 20.55      20.55 12/1/2019 
+      7777       7777 Dance Club                 10.45      10.45 12/1/2019 
+      8888       8888 Music Club                 15.25      15.25 12/1/2019 
+
+8 rows selected. 
+
+
+EVENT_ATTENDEE_ID STUDENT_ID EVENT_NUMBER
+----------------- ---------- ------------
+             1111       1111         1111
+             2222       2222         2222
+             3333       3333         3333
+             4444       4444         4444
+
+
+ATTENDEE_ID STUDENT_ID MEETING_NUM
+----------- ---------- -----------
+       1111       1111         111
+       2222       2222         222
+       3333       3333         333
+       4444       4444         444
+       5555       5555         111
+
+
+STUDENT_ID  MEMBER_ID CLUB_NAME           
+---------- ---------- --------------------
+      1111       1111 Coding Club         
+      2222       2222 Fight Club          
+      3333       3333 Dance Club          
+      4444       4444 Music Club          
+      5555       5555 Coding Club         
+      6666       6666 Fight Club          
+      7777       7777 Dance Club          
+      8888       8888 Music Club          
+
+8 rows selected. 
+
+
+FNAME                LNAME                CLUB_NAME           
+-------------------- -------------------- --------------------
+Don                  Vito                 Coding Club         
+Tania                Lopez                Dance Club          
+
+
+FNAME                LNAME                PAYMENT_ID STUDENT_ID CLUB_NAME            PAYMENT_DUE    PAY_AMT PAY_DUE_DA
+-------------------- -------------------- ---------- ---------- -------------------- ----------- ---------- ----------
+Jake                 Randle                     1111       1111 Coding Club                 9.99       9.99 12/1/2019 
+Rabi                 Pinkerten                  2222       2222 Fight Club                 20.55      20.55 12/1/2019 
+Jessica              Allambaka                  3333       3333 Dance Club                 10.45      10.45 12/1/2019 
+Ricardo              Mendoza                    4444       4444 Music Club                 15.25      15.25 12/1/2019 
+Don                  Vito                       5555       5555 Coding Club                 9.99       9.99 12/1/2019 
+Jackie               Flanigan                   6666       6666 Fight Club                 20.55      20.55 12/1/2019 
+Tania                Lopez                      7777       7777 Dance Club                 10.45      10.45 12/1/2019 
+Liam                 Evensten                   8888       8888 Music Club                 15.25      15.25 12/1/2019 
+
+8 rows selected. 
+
+
+FNAME                LNAME                CLUB_NAME             MEMBER_ID
+-------------------- -------------------- -------------------- ----------
+Rabi                 Pinkerten            Fight Club                 2222
+Jackie               Flanigan             Fight Club                 6666
+
+
+FNAME                LNAME                STUDENT_ID MEETING_NUM SUBJECT              CLUB_NAME           
+-------------------- -------------------- ---------- ----------- -------------------- --------------------
+Jake                 Randle                     1111         111 Job interviews       Coding Club         
+Rabi                 Pinkerten                  2222         222 Self-Defense         Fight Club          
+Jessica              Allambaka                  3333         333 Rythem               Dance Club          
+Ricardo              Mendoza                    4444         444 Music Theory         Music Club          
+Don                  Vito                       5555         111 Job interviews       Coding Club         
+
+
+Table ATTEND_MEETING dropped.
+
+
+Table ATTEND_EVENT dropped.
+
+
+Table PAYMENT dropped.
+
+
+Table JOIN_CLUB dropped.
+
+
+Table STUDENT dropped.
+
+
+Table CLUB dropped.
+
+
+Table MEETINGS dropped.
+
+
+Table CLUB_EVENT dropped.
+
